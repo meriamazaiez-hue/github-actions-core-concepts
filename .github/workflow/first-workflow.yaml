@@ -6,5 +6,9 @@ jobs:
         steps:
             - name: Test job Welcom messages
               run: echo "Executing the test job"
+              
+            - name: checkout repository
+              uses: actions/checkout@v7
+
             - name: Readme file content
               run: cat README.me
