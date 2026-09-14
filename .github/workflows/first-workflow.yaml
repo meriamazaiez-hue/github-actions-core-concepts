@@ -1,10 +1,14 @@
 name: First workflow
 on: push
 jobs:
-     test-job:
+    test-job:
         runs-on: ubuntu-latest
         steps:
             - name: Test job Welcom messages
               run: echo "Executing the test job"
+              
+            - name: checkout repository
+              uses: actions/checkout@v4
+
             - name: Readme file content
               run: cat README.me
