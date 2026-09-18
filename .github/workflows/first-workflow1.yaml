@@ -1,0 +1,27 @@
+name: First workflowV1
+on: push
+jobs:
+    build-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Build the application
+              run:
+                sleep 3 
+                echo "Building the app"
+    test-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Test the app
+              run:
+                sleep 3
+                 echo "Testing the app"
+    deploy-job:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Deploy the app
+              run:
+                sleep 1
+                 echo "Deploying the app"
+              
+              
+            
